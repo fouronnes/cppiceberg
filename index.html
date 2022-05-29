@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: black;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            width: 831px;
+            margin: 0 auto;
+        }
+
+        #iceberg {
+            font-family: DejaVuSansMono, "DejaVu Sans Mono", courier, monospace !important;
+            background: url("./iceberg.jpg") no-repeat;
+            width: 831px;
+            height: 1080px;
+            width: 831px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        header {
+            text-align: right;
+            max-width: 831px;
+            margin: 0 auto;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: block;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 2.2rem;
+            margin-right: 2.2rem;
+            margin-top: .75rem;
+            margin-bottom: .75rem;
+            line-height: 1.5rem;
+            text-shadow: 1px 1px 2px black, 1px -1px 2px black, -1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black, 2px 2px 4px black;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: #aaa;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li:nth-child(5n+0) {
+            transform: translateY(7px);
+        }
+
+        li:nth-child(5n+1) {
+            transform: translateY(-3px);
+        }
+
+        li:nth-child(5n+2) {
+            transform: translateY(0px);
+        }
+
+        li:nth-child(5n+3) {
+            transform: translateY(9px);
+        }
+
+        li:nth-child(5n+4) {
+            transform: translateY(4px);
+        }
+
+        #iceberg section:nth-child(1) {
+            padding-top: 1rem;
+            height: 253px;
+        }
+
+        #iceberg section:nth-child(2) {
+            height: 210px;
+        }
+
+        #iceberg section:nth-child(3) {
+            height: 180px;
+        }
+
+        #iceberg section:nth-child(4) {
+            height: 210px;
+        }
+
+        #iceberg section:nth-child(5) {
+            height: 200px;
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The C++ Iceberg</h1>
+    <!-- <header><p><a href="https://github.com/fouronnes/cppiceberg">source</a></p></header> -->
+    <div id="iceberg">
+
+        <section alt="Above the Water">
+            <ul>
+                <li><a href="https://stackoverflow.com/questions/381542/with-arrays-why-is-it-the-case-that-a5-5a">0[arr]</a></li>
+                <li><a href="https://gist.github.com/aras-p/6224951">#define private public</a></li>
+                <li><a href="https://stackoverflow.com/a/1759575">inline does not mean inline</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Most_vexing_parse">most vexing parse</a></li>
+                <li><a href="https://stackoverflow.com/questions/4300696/what-is-the-iosfwd-header">&ltiosfwd&gt</a></li>
+                <li><a href="https://stackoverflow.com/questions/1201593/where-is-c-not-a-subset-of-c">C++ is not a<br>superset of C</a></li>
+                <li><a href="https://stackoverflow.com/questions/3618760/c-protected-abstract-virtual-base-pure-virtual-private-destructor">protected abstract virtual base pure<br>virtual private destructor</a></li>
+                <li><a href="https://devblogs.microsoft.com/cppblog/simplify-your-code-with-rocket-science-c20s-spaceship-operator/">spaceship operator</a></li>
+                <li><a href="https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c-c">--> operator</a></li>
+                <li><a href="https://en.cppreference.com/w/cpp/language/operator_alternative">digraphs</a></li>
+                <li><a href="https://twitter.com/jntrnr/status/1522725730567995392">else if is a lie</a></li>
+            </ul>
+        </section>
+
+        <section alt="Below the Water">
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=OP9IDIeicZE">vector&ltbool&gt is broken</a></li>
+                <li><a href="https://twitter.com/pati_gallardo/status/1491906988762087428">unary minus with unsigned operand</a></li>
+                <li><a href="http://www.eelis.net/C++/analogliterals.xhtml">analog integer litterals</a></li>
+                <li><a href="https://rtraba.files.wordpress.com/2015/05/cppturing.pdf">templates turing completeness<br>was an accident</a></li>
+                <li><a href="https://github.com/yrnkrn/zapcc">zapcc compiler</a></li>
+                <li><a href="https://en.cppreference.com/w/cpp/utility/move">std::move does not move</a></li>
+                <li><a href="https://stackoverflow.com/a/6456967">std::remove does not remove</a></li>
+                <li><a href="https://www.youtube.com/watch?v=kPR8h4-qZdk">the strange details of std::string</a></li>
+                <li><a href="https://stackoverflow.com/questions/2753060/who-architected-designed-cs-iostreams-and-would-it-still-be-considered-wel">iostream was a mistake</a></li>
+            </ul>
+        </section>
+
+        <section alt="Middle of the Iceberg">
+            <ul>
+                <li><a href="https://stackoverflow.com/questions/28483250/rvalue-reference-is-treated-as-an-lvalue">rvalue references are lvalues</a></li>
+                <li><a href="https://stackoverflow.com/questions/5612486/when-is-a-function-try-block-useful">function try blocks</a></li>
+                <li><a href="https://en.cppreference.com/w/cpp/language/reference#Forwarding_references">T&& is not an<br>rvalue reference</a></li>
+                <li><a href="https://ddanilov.me/shared-ptr-is-evil/">shared_ptr is an anti-pattern</a></li>
+                <li><a href="https://timur.audio/initialisation-in-c17-the-matrix">initialization matrix</a></li>
+                <li><a href="https://twitter.com/NicoJosuttis/status/1443267749854208000?s=20&t=RaszjxtzYqK8VjueSGUtMA">the for loop is broken</a></li>
+            </ul>
+        </section>
+
+        <section alt="Bottom of the Iceberg">
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=4pKtPWcl1Go">constexpr does not mean what<br>you think it means</a></li>
+                <li><a href="https://cppinsights.io/s/96a2d477">const std::string bitand</a></li>
+                <li><a href="https://bartoszmilewski.com/2009/10/21/what-does-haskell-have-to-do-with-c/">templates are obfuscated haskell</a></li>
+                <li><a href="https://tgceec.tumblr.com/post/74534916370/results-of-the-grand-c-error-explosion?is_related_post=1">the grand error explosion competition</a></li>
+                <li><a href="https://stackoverflow.com/a/5602136">operator,()</a></li>
+                <li><a href="https://open-std.org/JTC1/SC22/WG21/docs/papers/2019/p0709r4.pdf">herbceptions</a></li>
+            </ul>
+        </section>
+
+        <section alt="The Abyss">
+            <ul>
+                <li><a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0798r4.html">std::optional is a monad</a></li>
+                <li><a href="https://herbsutter.com/2010/03/13/trip-report-march-2010-iso-c-standards-meeting/">C++0x is a hexadecimal name</a></li>
+                <li><a href="https://stackoverflow.com/questions/9181782/why-are-the-terms-automatic-and-dynamic-preferred-over-the-terms-stack-and?rq=1">heap and stack don't exist</a></li>
+                <li><a href="https://blog.sunfishcode.online/bugs-in-hello-world/">hello world has a bug</a></li>
+                <li><a href="https://blog.regehr.org/archives/161">C++ disproves fermat’s<br>last theorem</a></li>
+                <li><a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2279r0.html#c0x-concepts">C++0x concepts were rust traits</a></li>
+                <li><a href="https://godbolt.org/">godbolt is a real person</a></li>
+            </ul>
+        </section>
+
+        <div>
+</body>
+
+</html>
