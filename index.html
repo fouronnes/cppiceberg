@@ -19,7 +19,7 @@
             font-family: DejaVuSansMono, "DejaVu Sans Mono", courier, monospace !important;
             background: url("./iceberg.jpg") no-repeat;
             width: 831px;
-            height: 1080px;
+            height: 1250px;
             width: 831px;
             margin: 0 auto;
             margin-bottom: 5rem;
@@ -48,10 +48,10 @@
 
         li {
             display: inline-block;
-            margin-left: 2.2rem;
-            margin-right: 2.2rem;
-            margin-top: .75rem;
-            margin-bottom: .75rem;
+            margin-left: 2.0rem;
+            margin-right: 2.0rem;
+            margin-top: 1.0rem;
+            margin-bottom: 1.0rem;
             line-height: 1.5rem;
             text-shadow: 1px 1px 2px black, 1px -1px 2px black, -1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black, 2px 2px 4px black;
         }
@@ -68,46 +68,58 @@
             text-decoration: none;
         }
 
-        li:nth-child(5n+0) {
-            transform: translateY(7px);
+        li:nth-child(7n+0) {
+            transform: translateY(10px);
         }
 
-        li:nth-child(5n+1) {
-            transform: translateY(-3px);
+        li:nth-child(7n+1) {
+            transform: translateY(-6px);
         }
 
-        li:nth-child(5n+2) {
+        li:nth-child(7n+2) {
             transform: translateY(0px);
         }
 
-        li:nth-child(5n+3) {
-            transform: translateY(9px);
+        li:nth-child(7n+3) {
+            transform: translateY(15px);
         }
 
-        li:nth-child(5n+4) {
+        li:nth-child(7n+4) {
+            transform: translateY(6px);
+        }
+
+        li:nth-child(7n+5) {
+            transform: translateY(-10px);
+        }
+
+        li:nth-child(7n+6) {
             transform: translateY(4px);
         }
 
         #iceberg section:nth-child(1) {
             padding-top: 1rem;
-            height: 253px;
+            height: 265px;
         }
 
         #iceberg section:nth-child(2) {
-            height: 210px;
+            height: 250px;
         }
 
         #iceberg section:nth-child(3) {
-            height: 180px;
+            height: 140px;
         }
 
         #iceberg section:nth-child(4) {
-            height: 210px;
+            height: 205px;
         }
 
         #iceberg section:nth-child(5) {
+            height: 260px;
+        }
+
+        #iceberg section:nth-child(6) {
             height: 200px;
-            padding-bottom: 1rem;
+            padding-bottom: 4rem;
         }
     </style>
 </head>
@@ -126,13 +138,13 @@
                 <li><a href="https://gist.github.com/aras-p/6224951">#define private public</a></li>
                 <li><a href="https://stackoverflow.com/a/1759575">inline does not mean inline</a></li>
                 <li><a href="https://en.wikipedia.org/wiki/Most_vexing_parse">most vexing parse</a></li>
-                <li><a href="https://stackoverflow.com/questions/4300696/what-is-the-iosfwd-header">&ltiosfwd&gt</a></li>
                 <li><a href="https://stackoverflow.com/questions/1201593/where-is-c-not-a-subset-of-c">C++ is not a<br>superset of C</a></li>
-                <li><a href="https://stackoverflow.com/questions/3618760/c-protected-abstract-virtual-base-pure-virtual-private-destructor">protected abstract virtual base pure<br>virtual private destructor</a></li>
+                <li><a href="https://stackoverflow.com/questions/4300696/what-is-the-iosfwd-header">&ltiosfwd&gt</a></li>
                 <li><a href="https://devblogs.microsoft.com/cppblog/simplify-your-code-with-rocket-science-c20s-spaceship-operator/">spaceship operator</a></li>
-                <li><a href="https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c-c">--> operator</a></li>
+                <li><a href="https://godbolt.org/z/fWGW5aY1e">else if<br>is a lie</a></li>
                 <li><a href="https://en.cppreference.com/w/cpp/language/operator_alternative">digraphs</a></li>
-                <li><a href="https://godbolt.org/z/fWGW5aY1e">else if is a lie</a></li>
+                <li><a href="https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c-c">--> operator</a></li>
+                <li><a href="https://stackoverflow.com/questions/3618760/c-protected-abstract-virtual-base-pure-virtual-private-destructor">protected abstract virtual base pure<br>virtual private destructor</a></li>
             </ul>
         </section>
 
@@ -142,10 +154,10 @@
                 <li><a href="https://stackoverflow.com/q/8026694">unary minus with unsigned operand</a></li>
                 <li><a href="http://www.eelis.net/C++/analogliterals.xhtml">analog integer literals</a></li>
                 <li><a href="https://rtraba.files.wordpress.com/2015/05/cppturing.pdf">templates turing completeness<br>was an accident</a></li>
-                <li><a href="https://github.com/yrnkrn/zapcc">zapcc compiler</a></li>
+                <li><a href="https://yosefk.com/c++fqa/">C++ fqa lite</a></li>
                 <li><a href="https://en.cppreference.com/w/cpp/utility/move">std::move does not move</a></li>
                 <li><a href="https://stackoverflow.com/a/6456967">std::remove does not remove</a></li>
-                <li><a href="https://www.youtube.com/watch?v=kPR8h4-qZdk">the strange details of std::string</a></li>
+                <li><a href="https://www.youtube.com/watch?v=kPR8h4-qZdk">the strange details<br>of std::string</a></li>
                 <li><a href="https://stackoverflow.com/questions/2753060/who-architected-designed-cs-iostreams-and-would-it-still-be-considered-wel">iostream was a mistake</a></li>
             </ul>
         </section>
@@ -164,23 +176,36 @@
         <section alt="Bottom of the Iceberg">
             <ul>
                 <li><a href="https://www.youtube.com/watch?v=4pKtPWcl1Go">constexpr does not mean what<br>you think it means</a></li>
+                <li><a href="https://github.com/fouronnes/cppiceberg/issues/2">implicit char* to bool& conversion</a></li>
                 <li><a href="https://cppinsights.io/s/96a2d477">const std::string bitand</a></li>
-                <li><a href="https://bartoszmilewski.com/2009/10/21/what-does-haskell-have-to-do-with-c/">templates are obfuscated haskell</a></li>
-                <li><a href="https://tgceec.tumblr.com/post/74534916370/results-of-the-grand-c-error-explosion?is_related_post=1">the grand error explosion competition</a></li>
+                <li><a href="https://tgceec.tumblr.com/post/74534916370/results-of-the-grand-c-error-explosion?is_related_post=1">the grand error<br>explosion competition</a></li>
                 <li><a href="https://stackoverflow.com/a/5602136">operator,()</a></li>
                 <li><a href="https://open-std.org/JTC1/SC22/WG21/docs/papers/2019/p0709r4.pdf">herbceptions</a></li>
+                <li><a href="https://bartoszmilewski.com/2009/10/21/what-does-haskell-have-to-do-with-c/">templates are obfuscated haskell</a></li>
+            </ul>
+        </section>
+
+        <section alt="The Deep">
+            <ul>
+                <li><a href="https://herbsutter.com/2010/03/13/trip-report-march-2010-iso-c-standards-meeting/">C++0x is a<br>hexadecimal name</a></li>
+                <li><a href="https://stackoverflow.com/questions/9181782/why-are-the-terms-automatic-and-dynamic-preferred-over-the-terms-stack-and?rq=1">heap and stack don't exist</a></li>
+                <li><a href="https://blog.sunfishcode.online/bugs-in-hello-world/">hello world has a bug</a></li>
+                <li><a href="https://blog.regehr.org/archives/161">compilers disprove fermat’s<br>last theorem</a></li>
+                <li><a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2279r0.html#c0x-concepts">C++0x concepts were rust traits</a></li>
+                <li><a href="https://github.com/yrnkrn/zapcc">zapcc compiler</a></li>
+                <li><a href="https://stackoverflow.com/q/5625600">...... is valid syntax</a></li>
+                <li><a href="https://consteval.ca/2024/07/03/initialization/">i have no constructor<br>and i must initialize</a></li>
+                <li><a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0798r4.html">std::optional is a monad</a></li>
             </ul>
         </section>
 
         <section alt="The Abyss">
             <ul>
-                <li><a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0798r4.html">std::optional is a monad</a></li>
-                <li><a href="https://herbsutter.com/2010/03/13/trip-report-march-2010-iso-c-standards-meeting/">C++0x is a hexadecimal name</a></li>
-                <li><a href="https://stackoverflow.com/questions/9181782/why-are-the-terms-automatic-and-dynamic-preferred-over-the-terms-stack-and?rq=1">heap and stack don't exist</a></li>
-                <li><a href="https://blog.sunfishcode.online/bugs-in-hello-world/">hello world has a bug</a></li>
-                <li><a href="https://blog.regehr.org/archives/161">C++ disproves fermat’s<br>last theorem</a></li>
-                <li><a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2279r0.html#c0x-concepts">C++0x concepts were rust traits</a></li>
-                <li><a href="https://godbolt.org/">godbolt is a real person</a></li>
+                <li><a href="https://jadlevesque.github.io/PPMP-Iceberg/">the preprocessor<br>iceberg</a></li>
+                <li><a href="https://www.open-std.org/jtc1/sc22/wg21/docs/cwg_active.html">C++ active issues</a></li>
+                <li><a href="https://www.youtube.com/watch?v=By7b19YIv8Q">break abi to save C++</a></li>
+                <li><a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0172r0.html">abominable<br>function types</a></li>
+                <li><a href="https://xania.org/201609/how-compiler-explorer-runs-on-amazon">godbolt is a real person</a></li>
             </ul>
         </section>
 
